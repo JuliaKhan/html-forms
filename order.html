@@ -19,24 +19,39 @@
         </table>
         <h2>Order Form</h2>
         <form>
-            <input type="text" name="Name">
-            <input type="text" name="Recipient>">
-            <select name="Melon">
-                <option value="Watermelon">Watermelon</option>
-                <option value="Canteloupe">Canteloupe</option>
-                <option value="Honeydew">Honeydew</option>
-            </select>
-            <br>
-            When should we deliver?
-            <input type="radio" name="time" value="am"> Mourning
-            <input type="radio" name="time" value="pm"> Evening
-            <input type="radio" name="time" value="any"> Any time
-            <br>
-            Enter your message:
-            <input type="textarea" name="message">
-            <br>
-            Subscribe to our newsletter:
-            <input type="checkbox" name="subscribe" value="yes">
+            <div>
+                <label for="Name">Your Name:</label>
+                <input type="text" name="Name" id="Name">
+            </div>
+            <div>
+                <label for="Recipient">Recipient:</label>
+                <input type="text" name="Recipient>" id="Recipient">
+            </div>
+            <div>
+                <label for="Melon_choice">Choose a melon:</label>
+                <select name="Melon" id="Melon_choice">
+                    <option value="Watermelon">Watermelon</option>
+                    <option value="Canteloupe">Canteloupe</option>
+                    <option value="Honeydew">Honeydew</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>When should we deliver?</legend>
+                <input type="radio" name="time" value="am" id="am">
+                <label for="am">Morning</label>
+                <input type="radio" name="time" value="pm" id="pm">
+                <label for="pm">Evening</label>
+                <input type="radio" name="time" value="any" id="any">
+                <label for="any">Any time</label>
+            </fieldset>
+            <div>
+                <span>Enter your message:</span>
+                <input type="textarea" name="message">
+            </div>
+            <div>
+                Subscribe to our newsletter:
+                <input type="checkbox" name="subscribe" value="yes">
+            </div>
             <input type="submit" value="Submit">
         </form>
     </body>
